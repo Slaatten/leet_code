@@ -10,7 +10,7 @@ public class ContainsDuplicate {
             if (numSet.contains(num)) { // sjekker om Hashsettet innholder verdien
                 return true; // returner true dersom det er en duplikat
             }
-            numSet.add(num); // legger så til tallet
+            numSet.add(num); // legger så til tallet dersom tallet ikke finnes fra før.
         }
         return false; // fant ingen duplikater
     }
